@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+  background: #f5f5f5;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.container{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.btn{
+  background-color: #058fe6;        
+  color: white;                     
+  padding: 10px 20px;              
+  border: none;                  
+  border-radius: 30px;             
+  font-size: 16px;                 
+  cursor: pointer;                  
+  transition: background-color 0.3s ease,transform 0.2s ease; 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn img{
+  width: 20px;
+  margin-left: 10px;
+}
+
+.btn:hover {
+  background-color: #03b5e7;        /* Darker green on hover */
+  transform: scale(1.05);           /* Slight grow effect */
+}
+
+.btn:active {
+  transform: scale(0.98);           /* Slight shrink when clicked */
+}
+
+.btn:focus {
+  outline: none;                    /* Remove default outline */
+  box-shadow: 0 0 0 3px rgba(72, 180, 97, 0.5);  /* Custom focus effect */
+}
+
+.btn.dark-btn{
+  align-items: center;
+}
+
+
+/* ----- madia query ------ */
+
+@media (max-width: 1200px){
+  .container{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .btn{
+    padding: 14px 22px;
+  }
+}

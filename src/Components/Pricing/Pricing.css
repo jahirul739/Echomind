@@ -1,0 +1,138 @@
+.pricing-section {
+  padding: 80px 20px;
+  background-color: #fefefe;
+  text-align: center;
+}
+
+.pricing-section h2 {
+  font-size: 34px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.toggle-note {
+  color: #888;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+.pricing-cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pricing-card {
+  flex-basis: 22%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  padding: 30px 20px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.pricing-card .price {
+  font-size: 28px;
+  color: #5dc5f1;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.pricing-card .description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.pricing-card ul {
+  text-align: left;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.pricing-card ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.pricing-card ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #5dc5f1;
+  font-size: 12px;
+}
+
+.plan-badge {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  background: #5dc5f1;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.highlight {
+  background: linear-gradient(135deg, #d0e2f2, #b2d8f7);
+}
+
+.btn {
+  background-color: #5dc5f1;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #47b3e5;
+}
+
+.dark-btn {
+  background-color: #058fe6;
+}
+
+.dark-btn:hover {
+  background-color: #036bb0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .pricing-card {
+    flex-basis: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-card {
+    flex-basis: 100%;
+    max-width: 90%;
+  }
+}
